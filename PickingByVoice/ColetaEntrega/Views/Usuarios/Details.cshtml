@@ -1,0 +1,66 @@
+﻿@model ColetaEntrega.Models.Usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Participante.NmRazaoSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Participante.NmRazaoSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Senha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhCriacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhCriacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmUsuarioCriou)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmUsuarioCriou)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhAlteracao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhAlteracao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmUsuarioAlterou)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmUsuarioAlterou)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UsuarioId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

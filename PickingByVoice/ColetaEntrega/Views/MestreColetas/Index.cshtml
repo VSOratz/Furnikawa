@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ColetaEntrega.Models.MestreColeta>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CNH_Motorista)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Previsao_Retorno)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CNH_Motorista)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Previsao_Retorno)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MestreColetaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MestreColetaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MestreColetaId })
+        </td>
+    </tr>
+}
+
+</table>

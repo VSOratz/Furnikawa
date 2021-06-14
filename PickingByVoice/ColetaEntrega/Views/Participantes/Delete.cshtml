@@ -1,0 +1,152 @@
+﻿@model ColetaEntrega.Models.Participante
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Participante</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CgcCPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CgcCPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmRazaoSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmRazaoSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmFantasia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmFantasia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgTipoPessoa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgTipoPessoa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InscricaoEstadual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InscricaoEstadual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistroGeral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegistroGeral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CEP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CEP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Complemento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Complemento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NrTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NrTelefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NrCelular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NrCelular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgAtivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgAtivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SgUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SgUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DtManutencao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DtManutencao)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

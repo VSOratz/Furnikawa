@@ -1,0 +1,58 @@
+﻿@model ColetaEntrega.Models.UsuarioEmpresa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UsuarioEmpresa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Senha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhCriacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhCriacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmUsuarioCriou)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmUsuarioCriou)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhAlteracao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhAlteracao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmUsuarioAlterou)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmUsuarioAlterou)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

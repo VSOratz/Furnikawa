@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ColetaEntrega.Models.Inconformidade>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemColeta.Local_Coleta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InconformidadeSeq)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ListaSeq)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaterialCod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtdeSeparada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DhInconformidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FgEnviado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemColeta.Local_Coleta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InconformidadeSeq)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ListaSeq)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaterialCod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QtdeSeparada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DhInconformidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FgEnviado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.InconformidadeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.InconformidadeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.InconformidadeId })
+        </td>
+    </tr>
+}
+
+</table>

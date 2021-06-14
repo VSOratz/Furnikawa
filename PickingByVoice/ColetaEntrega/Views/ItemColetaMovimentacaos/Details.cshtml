@@ -1,0 +1,50 @@
+﻿@model ColetaEntrega.Models.ItemColetaMovimentacao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ItemColetaMovimentacao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemColeta.Local_Coleta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemColeta.Local_Coleta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescricaoMovimentacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescricaoMovimentacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhCriacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhCriacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmUsuarioCriou)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmUsuarioCriou)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ItemColetaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

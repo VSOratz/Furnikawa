@@ -1,0 +1,9 @@
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\bin\Debug\netcoreapp2.1\CLColetaEntregaCore.deps.json
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\bin\Debug\netcoreapp2.1\CLColetaEntregaCore.dll
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\bin\Debug\netcoreapp2.1\CLColetaEntregaCore.pdb
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\obj\Debug\netcoreapp2.1\CLColetaEntregaCore.csprojAssemblyReference.cache
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\obj\Debug\netcoreapp2.1\CLColetaEntregaCore.csproj.CoreCompileInputs.cache
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\obj\Debug\netcoreapp2.1\CLColetaEntregaCore.AssemblyInfoInputs.cache
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\obj\Debug\netcoreapp2.1\CLColetaEntregaCore.AssemblyInfo.cs
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\obj\Debug\netcoreapp2.1\CLColetaEntregaCore.dll
+D:\Morpheus\PickingByVoice\CLColetaEntregaCore\obj\Debug\netcoreapp2.1\CLColetaEntregaCore.pdb

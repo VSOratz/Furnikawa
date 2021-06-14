@@ -1,0 +1,123 @@
+﻿@model IEnumerable<ColetaEntrega.Models.Participante>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CgcCPF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NmRazaoSocial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NmFantasia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FgTipoPessoa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InscricaoEstadual)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegistroGeral)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CEP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Complemento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NrTelefone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NrCelular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FgEmpresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FgAtivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SgUser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DtManutencao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CgcCPF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NmRazaoSocial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NmFantasia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FgTipoPessoa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InscricaoEstadual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegistroGeral)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CEP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Complemento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NrTelefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NrCelular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FgEmpresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FgAtivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SgUser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DtManutencao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ParticipanteId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ParticipanteId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ParticipanteId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,66 @@
+﻿@model PickingByVoice.Models.Inconformidade
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Inconformidade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InconformidadeSeq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InconformidadeSeq)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ListaSeq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ListaSeq)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialCod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialCod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtdeSeparada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtdeSeparada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhInconformidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhInconformidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgEnviado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgEnviado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InconformidadeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

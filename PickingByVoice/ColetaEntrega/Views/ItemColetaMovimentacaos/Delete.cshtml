@@ -1,0 +1,56 @@
+﻿@model ColetaEntrega.Models.ItemColetaMovimentacao
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ItemColetaMovimentacao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemColeta.Local_Coleta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemColeta.Local_Coleta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescricaoMovimentacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescricaoMovimentacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhCriacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhCriacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmUsuarioCriou)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmUsuarioCriou)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

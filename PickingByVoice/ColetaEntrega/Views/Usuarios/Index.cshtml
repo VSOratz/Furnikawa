@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ColetaEntrega.Models.Usuario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Participante.NmRazaoSocial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Senha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DhCriacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NmUsuarioCriou)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DhAlteracao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NmUsuarioAlterou)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Participante.NmRazaoSocial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Senha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DhCriacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NmUsuarioCriou)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DhAlteracao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NmUsuarioAlterou)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UsuarioId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.UsuarioId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UsuarioId })
+        </td>
+    </tr>
+}
+
+</table>

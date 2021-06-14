@@ -1,0 +1,34 @@
+﻿@model ColetaEntrega.Models.MestreColeta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MestreColeta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CNH_Motorista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNH_Motorista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Previsao_Retorno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Previsao_Retorno)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MestreColetaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

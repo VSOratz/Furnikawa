@@ -1,0 +1,58 @@
+﻿@model PickingByVoice.Models.NotificationSocialNetwork
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NotificationSocialNetwork</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionSN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionSN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nmparticipant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nmparticipant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhModification)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhModification)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NotificationSocialNetwork_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

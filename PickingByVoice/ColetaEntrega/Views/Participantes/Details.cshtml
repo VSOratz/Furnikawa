@@ -1,0 +1,146 @@
+﻿@model ColetaEntrega.Models.Participante
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Participante</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CgcCPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CgcCPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmRazaoSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmRazaoSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmFantasia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmFantasia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgTipoPessoa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgTipoPessoa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InscricaoEstadual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InscricaoEstadual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistroGeral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegistroGeral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CEP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CEP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Complemento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Complemento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NrTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NrTelefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NrCelular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NrCelular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgAtivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgAtivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SgUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SgUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DtManutencao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DtManutencao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParticipanteId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

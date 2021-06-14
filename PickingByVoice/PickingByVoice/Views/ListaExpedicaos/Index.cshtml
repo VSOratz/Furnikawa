@@ -1,0 +1,111 @@
+﻿@model IEnumerable<PickingByVoice.Models.ListaExpedicao>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ListaNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ListaSeq)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaterialCod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaterialDes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnderecoCod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnderecoDes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtdeSolicitada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtdeSeparada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DhInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DhFim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FgExclusivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FgStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FgQtdeSeparada)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ListaNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ListaSeq)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaterialCod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaterialDes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnderecoCod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnderecoDes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QtdeSolicitada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QtdeSeparada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DhInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DhFim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FgExclusivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FgStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FgQtdeSeparada)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ListaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ListaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ListaId })
+        </td>
+    </tr>
+}
+
+</table>

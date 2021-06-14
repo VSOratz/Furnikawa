@@ -1,0 +1,66 @@
+﻿@model PickingByVoice.Models.SocialNetwork
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>SocialNetwork</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.DescriptionSN)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DescriptionSN)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Nmparticipant)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nmparticipant)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.LinkSocial)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.LinkSocial)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.UserID)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.UserID)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DhModification)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DhModification)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.SocialNetwork_ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

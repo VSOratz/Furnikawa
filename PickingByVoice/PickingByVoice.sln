@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickingByVoice", "PickingByVoice\PickingByVoice.csproj", "{A3931196-2073-407B-9114-43C44599D6E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickingByVoiceTwo", "PickingByVoiceTwo\PickingByVoiceTwo.csproj", "{89439C3A-94A3-45D8-B125-70C1323CF8A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColetaEntrega", "ColetaEntrega\ColetaEntrega.csproj", "{52F7CE97-D10F-45AF-BD9D-B593F40D29E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSColetaEntregaCore", "WSColetaEntregaCore\WSColetaEntregaCore.csproj", "{1C870BDB-0376-4A7F-B455-4E70C42DCF22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fldColetaEntrega", "fldColetaEntrega", "{02B06D1E-175A-4BDE-9EBC-00E092D2DB51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLColetaEntregaCore", "CLColetaEntregaCore\CLColetaEntregaCore.csproj", "{4B17B8AD-588C-42E8-A918-AF7B7F6809A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3931196-2073-407B-9114-43C44599D6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3931196-2073-407B-9114-43C44599D6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3931196-2073-407B-9114-43C44599D6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3931196-2073-407B-9114-43C44599D6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89439C3A-94A3-45D8-B125-70C1323CF8A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89439C3A-94A3-45D8-B125-70C1323CF8A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89439C3A-94A3-45D8-B125-70C1323CF8A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89439C3A-94A3-45D8-B125-70C1323CF8A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52F7CE97-D10F-45AF-BD9D-B593F40D29E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F7CE97-D10F-45AF-BD9D-B593F40D29E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F7CE97-D10F-45AF-BD9D-B593F40D29E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F7CE97-D10F-45AF-BD9D-B593F40D29E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C870BDB-0376-4A7F-B455-4E70C42DCF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C870BDB-0376-4A7F-B455-4E70C42DCF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C870BDB-0376-4A7F-B455-4E70C42DCF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C870BDB-0376-4A7F-B455-4E70C42DCF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B17B8AD-588C-42E8-A918-AF7B7F6809A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B17B8AD-588C-42E8-A918-AF7B7F6809A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B17B8AD-588C-42E8-A918-AF7B7F6809A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B17B8AD-588C-42E8-A918-AF7B7F6809A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C870BDB-0376-4A7F-B455-4E70C42DCF22} = {02B06D1E-175A-4BDE-9EBC-00E092D2DB51}
+		{4B17B8AD-588C-42E8-A918-AF7B7F6809A7} = {02B06D1E-175A-4BDE-9EBC-00E092D2DB51}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2EDF848-E3F5-4656-B05A-A569A1C90965}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://haarp.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PickingByVoice\\PickingByVoice.csproj
+		SccProjectName1 = PickingByVoice
+		SccLocalPath1 = PickingByVoice
+		SccProjectUniqueName2 = PickingByVoiceTwo\\PickingByVoiceTwo.csproj
+		SccProjectName2 = PickingByVoiceTwo
+		SccLocalPath2 = PickingByVoiceTwo
+		SccProjectUniqueName3 = ColetaEntrega\\ColetaEntrega.csproj
+		SccProjectName3 = ColetaEntrega
+		SccLocalPath3 = ColetaEntrega
+		SccProjectUniqueName4 = WSColetaEntregaCore\\WSColetaEntregaCore.csproj
+		SccProjectTopLevelParentUniqueName4 = PickingByVoice.sln
+		SccProjectName4 = WSColetaEntregaCore
+		SccLocalPath4 = WSColetaEntregaCore
+		SccProjectUniqueName5 = CLColetaEntregaCore\\CLColetaEntregaCore.csproj
+		SccProjectTopLevelParentUniqueName5 = PickingByVoice.sln
+		SccProjectName5 = CLColetaEntregaCore
+		SccLocalPath5 = CLColetaEntregaCore
+	EndGlobalSection
+EndGlobal

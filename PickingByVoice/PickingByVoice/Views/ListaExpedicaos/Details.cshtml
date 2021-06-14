@@ -1,0 +1,130 @@
+﻿@model PickingByVoice.Models.ListaExpedicao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ListaExpedicao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ListaNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ListaNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ListaSeq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ListaSeq)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialCod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialCod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialDes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialDes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnderecoCod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnderecoCod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnderecoDes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnderecoDes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtdeSolicitada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtdeSolicitada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtdeSeparada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtdeSeparada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DhFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DhFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgExclusivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgExclusivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FgQtdeSeparada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FgQtdeSeparada)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ListaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
